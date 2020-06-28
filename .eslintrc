@@ -1,0 +1,67 @@
+{
+	"extends": [
+		"eslint:recommended",
+		"airbnb-base",
+		"plugin:prettier/recommended",
+		"plugin:vue/recommended",
+		"prettier",
+		"prettier/@typescript-eslint",
+		"prettier/vue",
+		"plugin:vue-a11y/base"
+	],
+	"plugins": ["@typescript-eslint", "prettier", "vue", "vue-a11y"],
+	"root": true,
+	"parser": "vue-eslint-parser",
+	"parserOptions": {
+		"parser": "@typescript-eslint/parser",
+		"parserOptions": {
+			"sourceType": "module"
+		}
+	},
+	"env": {
+		"browser": true,
+		"node": true
+	},
+	"settings": {
+		"import/core-modules": ["vue", "vuex"],
+		"import/resolver": {
+			"node": {
+				"extensions": [".ts", ".tsx"]
+			}
+		}
+	},
+	"rules": {
+		"indent": [2, "tab", {
+			"SwitchCase": 1
+		}],
+		"quotes": [2, "single", "avoid-escape"],
+
+		"no-var": 2,
+		"prefer-const": 2,
+
+		"no-dupe-class-members": 0,
+		"no-unused-vars": 0,
+		"no-array-constructor": 0,
+		"import/no-unresolved": 0,
+		"import/extensions": 0,
+		"node/no-unsupported-features/es-syntax": 0,
+
+		"no-console": [1],
+
+		"@typescript-eslint/no-unused-vars": [2, {
+			"args": "none"
+		}],
+		"@typescript-eslint/no-array-constructor": 2,
+		"@typescript-eslint/adjacent-overload-signatures": 2,
+		"@typescript-eslint/no-namespace": [2, {
+			"allowDeclarations": true
+		}],
+		"@typescript-eslint/prefer-namespace-keyword": 2,
+		"@typescript-eslint/no-var-requires": 2,
+
+    "vue/component-name-in-template-casing": "off",
+    "func-names": "off",
+    "no-plusplus": "off",
+    "no-shadow": "off"
+	}
+}

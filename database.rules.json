@@ -1,0 +1,14 @@
+{
+  "rules": {
+    "quiz-state": {
+       "current-quiz": {
+        ".read": true,
+        ".write": true
+      },
+        "respondent-id": {
+        ".read": true,
+        ".write": true
+      } 
+    }
+  }
+}

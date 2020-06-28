@@ -1,0 +1,41 @@
+{
+  "name": "quiz-buzzer",
+  "version": "1.0.0",
+  "description": "Quiz buzzer system sample",
+  "author": "nonsugarless",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "dev:ip": "NUXT_HOST=0.0.0.0 NUXT_PORT=3333 nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "@nuxtjs/vuetify": "^1.11.2",
+    "core-js": "2.6.7",
+    "firebase": "^7.15.5",
+    "howler": "^2.2.0",
+    "normalize.css": "^8.0.1",
+    "nuxt": "^2.13.2"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.13.2",
+    "@nuxt/typescript-build": "^1.0.3",
+    "@nuxt/typescript-runtime": "^0.4.10",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/eslint-config": "^3.0.0",
+    "@nuxtjs/eslint-config-typescript": "^2.0.0",
+    "eslint": "^7.3.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-vue": "^6.2.2",
+    "eslint-plugin-vue-a11y": "^0.0.31",
+    "firebase-tools": "^8.4.3",
+    "prettier": "^2.0.5",
+    "vue-eslint-parser": "^7.1.0"
+  }
+}
