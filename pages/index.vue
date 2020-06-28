@@ -42,7 +42,7 @@ export default Vue.extend({
 			return this.quizData[this.currentQuizIndex]
 		},
 		waitingClicked() {
-			return !this.clickedAtFirst && !this.clicked2ndAndLater
+			return !this.clickedAtFirst && !this.clickedAtSecondAndLater
 		},
 		clickedAtFirst() {
 			const result =
@@ -51,7 +51,7 @@ export default Vue.extend({
 				this.userId === this.respondentId
 			return result
 		},
-		clicked2ndAndLater() {
+		clickedAtSecondAndLater() {
 			return !!this.respondentId && this.userId !== this.respondentId
 		},
 	},
